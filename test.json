@@ -31,7 +31,7 @@
                 "headers": {
                   "Content-Type": "application/xml"
                 },
-                "body": "test",
+                "body": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns=\"http://www.achmea.nl/ITM/ITDienst/EmailService/Operations/2019/08\" xmlns:ns1=\"http://www.achmea.nl/ITM/ITDienst/EmailService/DataModel/2019/08\">\n\t<soapenv:Header/>\n\t<soapenv:Body>\n\t\t<ns:VerstuurEmail>\n\t\t\t<ns:verstuurEmailData>\n\t\t\t\t<ns1:Adressering>\n\t\t\t\t\t<ns1:to>raymond.de.hond@achmea.nl</ns1:to>\n\t\t\t\t\t<ns1:from>raymond.de.hond@achmea.nl</ns1:from>\n\t\t\t\t</ns1:Adressering>\n\t\t\t\t<ns1:naamAfzender>ij</ns1:naamAfzender>\n\t\t\t\t<ns1:subject>Ik kom van Azure</ns1:subject>\n\t\t\t\t<ns1:Inhoud>\n\t\t\t\t\t<ns1:regel>test</ns1:regel>\n\t\t\t\t</ns1:Inhoud>\n\t\t\t</ns:verstuurEmailData>\n\t\t</ns:VerstuurEmail>\n\t</soapenv:Body>\n</soapenv:Envelope>",
                 "authentication": {
                   "type": "ClientCertificate",
                   "pfx": "@parameters('clientCertPfx')",
